@@ -47,6 +47,6 @@ function run(p:Uint8Array,q:Uint8Array){
  }
 }
 for(const d of D(I).sort()){
- const[o,k]=run(R(J(I,d,'program.bin')),R(J(I,d,'input.bin')));
- M(J(O,d),{recursive:true});W(J(O,d,'stdout.bin'),o);W(J(O,d,'exit.txt'),k+'\n');
+ const[o,k]=run(R(J(I,d,'program.bin')),R(J(I,d,'input.bin'))),t=J(O,d);
+ M(t,{recursive:true});W(J(t,'stdout.bin'),o);W(J(t,'exit.txt'),k+'\n');
 }
